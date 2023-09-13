@@ -7,9 +7,13 @@
  */
 int main(void)
 {
-	for (int digit = 0; digit <= 9; digit++)
+	int num0 = '0';
+	int num9 = '9';
+
+	while (num0 <= num9)
 	{
-		putchar(digit + '0');
+		putchar(num0);
+		num0++;
 	}
 
 	putchar('\n');
