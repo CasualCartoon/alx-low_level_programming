@@ -23,13 +23,12 @@ int main(void)
 		a = b;
 		b = temp;
 
-		if (count == 95)
-			printf(", %lu\n", temp);
-		else
-			printf(", %lu", temp);
+		printf(", %lu", temp);
 
 		count++;
 	}
+
+	printf("\n");
 
 	return (0);
 }
