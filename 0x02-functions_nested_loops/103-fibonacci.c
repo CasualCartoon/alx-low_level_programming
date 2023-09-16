@@ -11,8 +11,8 @@
  */
 int main(void)
 {
-	long long int a = 1, b = 2, temp;
-	long long int sum = 0;
+	long a = 1, b = 2, temp;
+	long sum = 0;
 
 	while (a <= 4000000)
 	{
@@ -26,7 +26,7 @@ int main(void)
 		b = temp;
 	}
 
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 
 	return (0);
 }
