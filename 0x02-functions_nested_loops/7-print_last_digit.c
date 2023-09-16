@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_last_digit - Prints and returns the last digit of a number
- * @n: The number to extract the last digit from
+ * print_last_digit - Returns the last digit of a number.
+ * @n: The number to extract the last digit from.
  *
- * Return: The value of the last digit
+ * Return: The value of the last digit.
  */
 int print_last_digit(int n)
 {
@@ -13,7 +13,20 @@ int print_last_digit(int n)
 	if (last_digit < 0)
 		last_digit *= -1;
 
-	printf("%d\n", last_digit);
-
 	return (last_digit);
+}
+
+/**
+ * main - Entry point.
+ *
+ * Return: Always 0 (Success).
+ */
+int main(void)
+{
+	int number = 88;
+	int last_digit = print_last_digit(number);
+
+	printf("Last digit of %d is %d\n", number, last_digit);
+
+	return (0);
 }
